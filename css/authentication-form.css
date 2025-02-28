@@ -24,28 +24,25 @@ p {
 
 /* 👇👇👇  ADD YOUR FORM STYLES BENEATH  👇👇👇*/
 
+.top-nav {
+  padding-left: calc(2vh + 10%);
+}
+
 form {
   border: 1px solid #a9a9a9;
   padding: 20px;
+  flex-wrap: wrap;
 }
 
 .subtext {
   color: #a9a9a9;
   font-weight: unset;
-}
-
-#sign-in,
-#sign-up {
-  width: 100%;
+  padding-top: 1vh;
 }
 
 a {
   color: #335eea;
   text-decoration: none;
-}
-
-label {
-  font-weight: bold;
 }
 
 input {
@@ -82,4 +79,110 @@ input[type="submit"]:hover {
 
 .form select {
   height: 30px;
+}
+
+.content {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100vh;
+  padding: 0 10%;
+}
+
+#sign-in,
+#sign-up {
+  width: 100%;
+  height: 100%;
+  padding: 2vh;
+  max-width: 100%;
+}
+
+#sign-in-form {
+  height: auto;
+  width: auto;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 30px;
+}
+
+#sign-up-form {
+  height: auto;
+  width: auto;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 30px;
+}
+
+#sign-up-form .form-radio-control label {
+  font-weight: normal;
+}
+
+hr {
+  display: flex;
+}
+.form-header {
+  padding: 0 0 2vh 0;
+}
+
+#sign-in .form-input-control {
+  height: 54px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+#sign-up .form-input-control {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+}
+
+.form-input-control * {
+  padding-bottom: 6px;
+}
+
+.form-checkbox-control {
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.form-checkbox-control label {
+  padding-left: 1vh;
+}
+
+.form-submit-control {
+  box-sizing: border-box;
+  padding: 2vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.form-group-horizontal-control {
+  max-height: 54px;
+  max-width: 760px;
+  display: flex;
+  gap: 20px;
+  box-sizing: border-box;
+}
+
+.form-group-horizontal-control * {
+  width: 100%;
+  height: 30px;
+  box-sizing: border-box;
+}
+
+.form-group-horizontal-control select {
+  height: 30px;
+  padding: 0;
+  flex-shrink: 0;
 }
